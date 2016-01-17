@@ -40,4 +40,7 @@ plug.util.log('Environment: ' + plug.util.colors.yellow(plug.env));
 // gulpplugging...
 plug.loadPlugins()
   .addTasks()
-  .addHelpTask();
+  .addHelpTask()
+  .addSequence('build', ['clean', 'build:js'])
+  .addSequence('clean', ['clean:js'])
+  .addSequence('watch', ['watch:js']);
