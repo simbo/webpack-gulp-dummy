@@ -2,7 +2,7 @@
 
 module.exports = [
 
-  'watch javascripts via webpack-stream',
+  'watch javascripts via webpack',
 
   function(done) {
     this.watch = true;

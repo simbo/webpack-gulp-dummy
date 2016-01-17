@@ -40,10 +40,10 @@ gulp
 
   * in production env, uglify javascripts
 
+  * use common gulp/vinyl streaming
+
 
 ### Unsolved
-
-  * use common gulp/vinyl streaming
 
 
 ### Untested

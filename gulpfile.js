@@ -41,6 +41,6 @@ plug.util.log('Environment: ' + plug.util.colors.yellow(plug.env));
 plug.loadPlugins()
   .addTasks()
   .addHelpTask()
-  .addSequence('build', ['clean', 'build:js'])
+  .addSequence('build', ['clean', 'build:js-stream'])
   .addSequence('clean', ['clean:js'])
-  .addSequence('watch', ['watch:js']);
+  .addSequence('watch', ['watch:js-stream']);

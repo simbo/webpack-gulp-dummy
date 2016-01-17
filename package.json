@@ -24,7 +24,10 @@
     "eslint-loader": "^1.2.0",
     "glob": "^6.0.4",
     "gulp": "^3.9.0",
+    "gulp-plumber": "^1.0.1",
     "gulpplug": "^1.4.0",
-    "webpack": "^1.12.11"
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.12.11",
+    "webpack-stream": "^3.1.0"
   }
 }
