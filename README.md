@@ -39,13 +39,16 @@ gulp
   * in production env, uglify javascripts
 
 
-### Unsolved or untested
+### Unsolved
 
   * test eslint rules while watching, output results in console
 
-  * when watching, use live-reload
-
   * use common gulp/vinyl streaming
+
+
+### Untested
+
+  * when watching, use live-reload
 
 
 ## License
