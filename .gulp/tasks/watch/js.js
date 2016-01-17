@@ -6,7 +6,7 @@ module.exports = [
 
   function(done) {
     this.watch = true;
-    this.runSequence('clean:js', 'build:js-stream', done);
+    this.runSequence('clean:js', 'build:js', done);
   }
 
 ];

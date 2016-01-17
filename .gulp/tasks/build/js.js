@@ -24,7 +24,7 @@ module.exports = [
         colors: true,
         timings: true
       }));
-      done();
+      if (plug.watch !== true) return done();
     }
 
     glob('*.js', {cwd: plug.paths.js.src}, function(err, files) {
@@ -70,7 +70,7 @@ module.exports = [
         ],
 
         eslint: {
-          failOnError: plug.env === 'production'
+          failOnError: plug.env === 'production' && plug.watch !== true
         }
 
       });

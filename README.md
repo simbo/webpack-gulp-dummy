@@ -34,14 +34,14 @@ gulp
 
   * test eslint rules on source javascript
 
-  * in pruduction env, do not bundle js if eslint throws errors on javascript sources
+  * test eslint rules while watching, output results in console, do not die on errors
+
+  * in production env, do not bundle js if eslint throws errors on javascript sources
 
   * in production env, uglify javascripts
 
 
 ### Unsolved
-
-  * test eslint rules while watching, output results in console
 
   * use common gulp/vinyl streaming
 
