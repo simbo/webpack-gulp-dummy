@@ -1,6 +1,7 @@
 {
   "extends": "simbo/default/node",
   "rules": {
+    "require-jsdoc": 0,
     "vars-on-top": 0
   }
 }
