@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * in comparison, same task using browserify and watchify:
+ * https://github.com/simbo/nodejazz/blob/17af5beadf1f4b9f771fdc1dc9f5626bd3c3c9fe/.gulp/tasks/build/js.js
+ */
+
 var path = require('path');
 
 var glob = require('glob'),
