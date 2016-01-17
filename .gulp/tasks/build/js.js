@@ -55,26 +55,18 @@ module.exports = [
 
         devtool: 'source-map',
 
-        plugins: plug.env === 'development' ? [] : [
+        plugins: plug.env === 'development' ? [
+        ] : [
           new webpack.optimize.UglifyJsPlugin({
             compress: {
               warnings: false
             }
           })
-        ].concat[
-          function() {
-            this.plugin('done', function(stats) {
-              if (stats.compilation.errors && stats.compilation.errors.length) {
-                stats.compilation.errors.forEach(function(theError) {
-                  plug.util.log(theError.error);
-                });
-                if (plug.env === 'production') {
-                  process.exit(1); // eslint-disable-line no-process-exit
-                }
-              }
-            });
-          }
-        ]
+        ],
+
+        eslint: {
+          failOnError: plug.env === 'production'
+        }
 
       });
 
