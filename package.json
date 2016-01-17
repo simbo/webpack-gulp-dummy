@@ -1,0 +1,30 @@
+{
+  "name": "webpack-gulp-dummy",
+  "version": "0.1.0",
+  "description": "Testing webpack within gulp and trying to replace browserify to bundle javascripts.",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simbo/webpack-gulp-dummy.git"
+  },
+  "author": "Simon Lepel <simbo@simbo.de> (http://simbo.ninja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simbo/webpack-gulp-dummy/issues"
+  },
+  "homepage": "https://github.com/simbo/webpack-gulp-dummy#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "eslint": "^1.10.3",
+    "eslint-config-simbo": "^0.2.0",
+    "eslint-loader": "^1.2.0",
+    "glob": "^6.0.4",
+    "gulp": "^3.9.0",
+    "gulpplug": "^1.3.0",
+    "webpack": "^1.12.11"
+  }
+}
