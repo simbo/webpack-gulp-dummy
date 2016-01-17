@@ -26,6 +26,8 @@ gulp
 
   * use webpack watch instead of gulp watch
 
+  * work as async gulp task, correctly emit `done`
+
   * agnostically create multiple entries and outputs by glob
 
   * use entry filename as output filename
