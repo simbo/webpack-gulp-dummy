@@ -8,6 +8,7 @@
 var path = require('path');
 
 var vinylNamed = require('vinyl-named'),
+    webpack = require('webpack'),
     webpackStream = require('webpack-stream');
 
 module.exports = [
@@ -17,7 +18,9 @@ module.exports = [
   function() {
     return this.gulp
       .src(path.join(this.paths.js.src, '*.js'))
-      .pipe(this.env === 'development' ? this.plugins.plumber() : this.util.noop())
+      .pipe(this.watch === true ? this.plugins.plumber({
+        errorHandler: function() {}
+      }) : this.util.noop())
       .pipe(vinylNamed())
       .pipe(webpackStream({
         module: {
@@ -47,7 +50,7 @@ module.exports = [
           aggregateTimeout: 300,
           poll: 100
         }
-      }, null, function(err, stats) {
+      }, webpack, function(err, stats) {
         if (err) throw new this.util.PluginError('webpack', err);
         this.util.log('[webpack]', stats.toString({
           colors: true,
