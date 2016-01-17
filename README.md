@@ -45,6 +45,8 @@ gulp
 
   * when watching, use live-reload
 
+  * use common gulp/vinyl streaming
+
 
 ## License
 
